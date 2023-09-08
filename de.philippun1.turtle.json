@@ -64,9 +64,9 @@
       ],
       "sources": [
         {
-          "sha256": "9127c9f28ea1a0d679d1333cb94d80a098c39574af45a6a612fb4da317dd1004",
+          "sha256": "71500323e6e6cfd4ecb25dd5500b384f890438fe55198d1d8321b8fd4b6c5ddc",
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.3.1/turtle-0.3.1.tar.gz"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.4/turtle-0.4.tar.gz"
         }
       ]
     }
