@@ -9,13 +9,23 @@
     "--share=network",
     "--socket=fallback-x11",
     "--socket=wayland",
-    "--filesystem=home",
+    "--filesystem=host",
     "--device=dri"
   ],
   "cleanup": [
     "/bin/git2",
     "/include",
-    "/lib/pkgconfig"
+    "/lib/pkgconfig",
+    "/include",
+    "/lib/pkgconfig",
+    "/share/pkgconfig",
+    "/share/aclocal",
+    "/man",
+    "/share/man",
+    "/share/gtk-doc",
+    "/share/vala",
+    "*.la",
+    "*.a"
   ],
   "modules": [
     {
@@ -68,6 +78,38 @@
           "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.5/turtle-0.5.tar.gz",
           "sha256": "8e697163496dd52a082293e691025bb768ee54a468d107d208d31c60cb702435"
         }
+      ]
+    },
+    {
+      "name": "gtksourceview",
+      "config-opts": [
+        "--enable-vala=no",
+        "--enable-gtk-doc=no"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
+          "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+        }
+      ]
+    },
+    {
+      "name": "meld",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.0.tar.xz",
+          "sha256": "3fc107c98ef6e75358ffd2b0d14c85ddb48fe14a11e939a94322faaa8e90c40d"
+        },
+        {
+          "type": "patch",
+          "path": "meld-appid.patch"
+        }
+      ],
+      "modules": [
+        "shared-modules/intltool/intltool-0.51.json"
       ]
     }
   ]
