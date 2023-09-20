@@ -1,37 +1,13 @@
-diff --git a/data/meson.build b/data/meson.build
+diff --git a/meld/meldapp.py b/meld/meldapp.py
 index de099d3b..13d7e650 100644
---- a/data/meson.build
-+++ b/data/meson.build
-@@ -95,7 +95,7 @@ icon_sizes = ['scalable']
+--- a/meld/meldapp.py
++++ b/meld/meldapp.py
+@@ -41,7 +41,7 @@
  
- foreach i: icon_sizes
-   install_data(
--    'icons/hicolor' / i / 'apps' / application_id + '.svg',
-+    'icons/hicolor' / i / 'apps' / 'org.gnome.Meld.svg',
-     install_dir: icondir / 'hicolor' / i / 'apps',
-     rename: '@0@.svg'.format(application_id),
-   )
-@@ -103,7 +103,7 @@ endforeach
- 
- # Install the symbolic icon
- install_data(
--  'icons/hicolor/symbolic/apps' / application_id_no_profile + '-symbolic.svg',
-+  'icons/hicolor/symbolic/apps' / 'org.gnome.Meld-symbolic.svg',
-   install_dir: icondir / 'hicolor/symbolic/apps',
-   rename: '@0@-symbolic.svg'.format(application_id),
- )
-diff --git a/meson.build b/meson.build
-index eea1336e..f8e38c1c 100644
---- a/meson.build
-+++ b/meson.build
-@@ -26,8 +26,8 @@ profile = get_option('profile')
- name_suffix = (profile == 'Devel' ? ' (Development Snapshot)' : '')
- 
- resource_base_id = 'org.gnome.meld'
--application_id_no_profile = 'org.gnome.Meld'
--application_id = 'org.gnome.Meld@0@'.format(profile)
-+application_id_no_profile = 'de.philippun1.turtle'
-+application_id = 'de.philippun1.turtle'
- 
- prefix = get_option('prefix')
- 
+     def __init__(self):
+         super().__init__(
+-            application_id=meld.conf.APPLICATION_ID,
++            application_id="de.philippun1.turtle",
+             flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE,
+         )
+         GLib.set_application_name(meld.conf.APPLICATION_NAME)
