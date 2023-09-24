@@ -33,6 +33,38 @@
   ],
   "modules": [
     {
+      "name": "gtksourceview",
+      "config-opts": [
+        "--enable-vala=no",
+        "--enable-gtk-doc=no"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
+          "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+        }
+      ]
+    },
+    {
+      "name": "meld",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.0.tar.xz",
+          "sha256": "3fc107c98ef6e75358ffd2b0d14c85ddb48fe14a11e939a94322faaa8e90c40d"
+        },
+        {
+          "type": "patch",
+          "path": "meld-appid.patch"
+        }
+      ],
+      "modules": [
+        "shared-modules/intltool/intltool-0.51.json"
+      ]
+    },
+    {
       "name": "pygit2",
       "buildsystem": "simple",
       "build-commands": [
@@ -82,38 +114,6 @@
           "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.5.1/turtle-0.5.1.tar.gz",
           "sha256": "6b2e90cd8b707ec1da44790a50fcf7904dcf4be400ab8ee0498006e8f17049ae"
         }
-      ]
-    },
-    {
-      "name": "gtksourceview",
-      "config-opts": [
-        "--enable-vala=no",
-        "--enable-gtk-doc=no"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
-          "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
-        }
-      ]
-    },
-    {
-      "name": "meld",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.0.tar.xz",
-          "sha256": "3fc107c98ef6e75358ffd2b0d14c85ddb48fe14a11e939a94322faaa8e90c40d"
-        },
-        {
-          "type": "patch",
-          "path": "meld-appid.patch"
-        }
-      ],
-      "modules": [
-        "shared-modules/intltool/intltool-0.51.json"
       ]
     }
   ]
