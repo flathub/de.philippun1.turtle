@@ -7,7 +7,7 @@ index de099d3b..13d7e650 100644
      def __init__(self):
          super().__init__(
 -            application_id=meld.conf.APPLICATION_ID,
-+            application_id="de.philippun1.turtle",
++            
              flags=Gio.ApplicationFlags.HANDLES_COMMAND_LINE,
          )
          GLib.set_application_name(meld.conf.APPLICATION_NAME)
