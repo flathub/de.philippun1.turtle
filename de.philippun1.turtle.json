@@ -73,23 +73,23 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
-          "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
+          "url": "https://files.pythonhosted.org/packages/68/ce/95b0bae7968c65473e1298efb042e10cafc7bafc14d9e4f154008241c91d/cffi-1.16.0.tar.gz",
+          "sha256": "bcb3ef43e58665bbda2fb198698fcae6776483e0c4a631aa5647806c25e02cc0"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-          "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
+          "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
+          "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/33/20/ae3efebb6ce3e1a226a8f29bf6ed6bb9b89a79f38b9b833284185baac7ca/pygit2-1.12.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "214bd214784fcbef7a8494d1d59e0cd3a731c0d24ce0f230dcc843322ee33b08"
+          "url": "https://files.pythonhosted.org/packages/15/2f/9e898a7e81a6ed8275c586ffb23763b0afcc668d78d814aea372ac760f64/pygit2-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "f35152b96a31ab705cdd63aef08fb199d6c1e87fc6fd45b1945f8cd040a43b7b"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/34/54/9dc72a29db8f16e99aa09dc86b870232f35f94f5fefd47e7b8bc81b01a99/pygit2-1.12.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-          "sha256": "f4df3e5745fdf3111a6ccc905eae99f22f1a180728f714795138ca540cc2a50a"
+          "url": "https://files.pythonhosted.org/packages/fe/94/6a95ebbcc29fbf37e4af2d797e1009507460125d93d8038b81cd2c636bd7/pygit2-1.14.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "sha256": "141a1b37fc431d98b3de2f4651eab8b1b1b038cd50de42bfd1c8de057ec2284e"
         }
       ]
     },
@@ -111,8 +111,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.7/turtle-0.7.tar.gz",
-          "sha256": "627880abe88f138066e91ade27e09101596506d621abef82e023d4199f662d54"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.8/turtle-0.8.tar.gz",
+          "sha256": "3c90de1e8e8711472c4474cf6169f24c8ff403221715197b360e2bed65e19160"
         }
       ]
     }
