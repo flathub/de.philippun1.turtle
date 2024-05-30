@@ -1,7 +1,7 @@
 {
   "app-id": "de.philippun1.turtle",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "44",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "turtle_cli",
   "finish-args": [
@@ -34,15 +34,15 @@
   "modules": [
     {
       "name": "gtksourceview",
+      "buildsystem": "meson",
       "config-opts": [
-        "--enable-vala=no",
-        "--enable-gtk-doc=no"
+        "-Dvapi=false"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
-          "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+          "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+          "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
         }
       ]
     },
@@ -83,13 +83,27 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/15/2f/9e898a7e81a6ed8275c586ffb23763b0afcc668d78d814aea372ac760f64/pygit2-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "f35152b96a31ab705cdd63aef08fb199d6c1e87fc6fd45b1945f8cd040a43b7b"
+          "url": "https://files.pythonhosted.org/packages/16/b9/e03b5fa734f3f2a1129edd820812d69924909643f3bd263ed4aede682860/pygit2-1.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "bc3326a5ce891ef26429ae6d4290acb80ea0064947b4184a4c4940b4bd6ab4a3"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/fe/94/6a95ebbcc29fbf37e4af2d797e1009507460125d93d8038b81cd2c636bd7/pygit2-1.14.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-          "sha256": "141a1b37fc431d98b3de2f4651eab8b1b1b038cd50de42bfd1c8de057ec2284e"
+          "url": "https://files.pythonhosted.org/packages/0e/b2/7b7a57f69e44b0a65e3324986e64f804f390b2cc5bdecbeb4760a20494c4/pygit2-1.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "sha256": "0fff3d1aaf1d7372757888c4620347d6ad8b1b3a637b30a3abd156da7cf9476b"
+        }
+      ]
+    },
+    {
+      "name": "dbus-python",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"dbus-python\""
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/b1/5c/ccfc167485806c1936f7d3ba97db6c448d0089c5746ba105b6eb22dba60e/dbus-python-1.2.18.tar.gz",
+          "sha256": "92bdd1e68b45596c833307a5ff4b217ee6929a1502f5341bae28fd120acf7260"
         }
       ]
     },
