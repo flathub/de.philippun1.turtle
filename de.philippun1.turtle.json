@@ -129,8 +129,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.9/turtle-0.9.tar.gz",
-          "sha256": "d0090c59f9b88cae8ac73b38c005edce0d19d81b865c99db3097819868a46082"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.10/turtle-0.10.tar.gz",
+          "sha256": "a4398d95dd4d91965d7c8a703189cee9df3eb6ab9c61c977993229d4abbc3afd"
         }
       ]
     }
