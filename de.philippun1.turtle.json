@@ -9,6 +9,7 @@
     "--share=network",
     "--socket=fallback-x11",
     "--socket=wayland",
+    "--socket=ssh-auth",
     "--talk-name=org.gnome.seahorse",
     "--filesystem=host",
     "--device=dri"
