@@ -1,7 +1,7 @@
 {
   "app-id": "de.philippun1.turtle",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "command": "turtle_cli",
   "finish-args": [
@@ -88,13 +88,13 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/16/b9/e03b5fa734f3f2a1129edd820812d69924909643f3bd263ed4aede682860/pygit2-1.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "bc3326a5ce891ef26429ae6d4290acb80ea0064947b4184a4c4940b4bd6ab4a3"
+          "url": "https://files.pythonhosted.org/packages/75/7f/2d71d2e4c1b78138ff3f92a2cf871141d96043ea3362205cd18ffbfb47ed/pygit2-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "f2378f9a70cea27809a2c78b823e22659691a91db9d81b1f3a58d537067815ac"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/0e/b2/7b7a57f69e44b0a65e3324986e64f804f390b2cc5bdecbeb4760a20494c4/pygit2-1.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-          "sha256": "0fff3d1aaf1d7372757888c4620347d6ad8b1b3a637b30a3abd156da7cf9476b"
+          "url": "https://files.pythonhosted.org/packages/b1/53/84e535d2d50a840cc3d130b246559f38dd13e945463f92f6343404e4dd36/pygit2-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "sha256": "e4f371c4b7ee86c0a751209fac7c941d1f6a3aca6af89ac09481469dbe0ea1cc"
         }
       ]
     },
@@ -132,8 +132,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.11/turtle-0.11.tar.gz",
-          "sha256": "152ff3d3fe039762c37a5fa562e088b84ac890c6db2e1072c3c1aa3fab03ff39"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.11.1/turtle-0.11.1.tar.gz",
+          "sha256": "362dc3f833fd0c61c9c5ae3e060b7bffde7552bdc400ea6b6de01b53a4fc84b2"
         }
       ]
     }
