@@ -1,7 +1,7 @@
 {
   "app-id": "de.philippun1.turtle",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "command": "turtle_cli",
   "finish-args": [
@@ -132,8 +132,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.12/turtle-0.12.tar.gz",
-          "sha256": "25b3ea49a7a21ebde32ef25321ba5ab0778d992d84b73b31019245c140eb99eb"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.12.1/turtle-0.12.1.tar.gz",
+          "sha256": "d829ef0b51ff0ffd56ff49b1d526bc536f9858da739f9851fa51dec4e2a49343"
         }
       ]
     }
