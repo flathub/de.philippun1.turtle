@@ -1,7 +1,7 @@
 {
   "app-id": "de.philippun1.turtle",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "48",
+  "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
   "command": "turtle_cli",
   "finish-args": [
@@ -78,8 +78,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/68/ce/95b0bae7968c65473e1298efb042e10cafc7bafc14d9e4f154008241c91d/cffi-1.16.0.tar.gz",
-          "sha256": "bcb3ef43e58665bbda2fb198698fcae6776483e0c4a631aa5647806c25e02cc0"
+          "url": "https://files.pythonhosted.org/packages/fc/97/c783634659c2920c3fc70419e3af40972dbaf758daa229a7d6ea6135c90d/cffi-1.17.1.tar.gz",
+          "sha256": "1c39c6016c32bc48dd54561950ebd6836e1670f2ae46128f67cf49e789c52824"
         },
         {
           "type": "file",
@@ -88,13 +88,13 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/75/7f/2d71d2e4c1b78138ff3f92a2cf871141d96043ea3362205cd18ffbfb47ed/pygit2-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-          "sha256": "f2378f9a70cea27809a2c78b823e22659691a91db9d81b1f3a58d537067815ac"
+          "url": "https://files.pythonhosted.org/packages/b7/5b/176d93a4d4c80a5c595542bd70e6025c8067053597977151fa53ccf25b0c/pygit2-1.16.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "e544df34c3ad768332837a987a2814ca9d8f0902243bf0e5a10439b7367b8f76"
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/b1/53/84e535d2d50a840cc3d130b246559f38dd13e945463f92f6343404e4dd36/pygit2-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-          "sha256": "e4f371c4b7ee86c0a751209fac7c941d1f6a3aca6af89ac09481469dbe0ea1cc"
+          "url": "https://files.pythonhosted.org/packages/0a/ff/596c81d08925a40493979f25d5ae10bcb445a297d19d4b93236e11e759df/pygit2-1.16.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "sha256": "41db6402f29d2a79f5a39fb777c50b101f63f7a2e0c6d92e9c67685dd969ea82"
         }
       ]
     },
@@ -109,6 +109,11 @@
           "type": "file",
           "url": "https://files.pythonhosted.org/packages/b1/5c/ccfc167485806c1936f7d3ba97db6c448d0089c5746ba105b6eb22dba60e/dbus-python-1.2.18.tar.gz",
           "sha256": "92bdd1e68b45596c833307a5ff4b217ee6929a1502f5341bae28fd120acf7260"
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+          "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
         }
       ]
     },
@@ -127,13 +132,18 @@
         "install -D plugins/turtle_nautilus_flatpak.py /app/share/nautilus-python/extensions/turtle_nautilus_flatpak.py",
         "install -D data/icons/hicolor/scalable/apps/de.philippun1.turtle.svg /app/share/icons/hicolor/scalable/apps/de.philippun1.turtle.svg",
         "install -D data/icons/hicolor/symbolic/apps/de.philippun1.turtle-symbolic.svg /app/share/icons/hicolor/symbolic/apps/de.philippun1.turtle-symbolic.svg",
-        "pip3 install --no-deps --prefix=/app ."
+        "pip3 install --verbose --no-deps --prefix=/app ."
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.13.3/turtle-0.13.3.tar.gz",
-          "sha256": "c8bc54f65d89c16d4f91c50fee6f27332f78b3d7da345483f913b5cf338fb087"
+          "path": "/home/phil/Projects/turtle.tar.xz",
+          "sha256": "61e4ae4af55662b8dcaab87b88ff81b636cacae162adb114e120e458fab6cef7"
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+          "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
         }
       ]
     }
