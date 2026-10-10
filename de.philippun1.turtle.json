@@ -1,7 +1,7 @@
 {
   "app-id": "de.philippun1.turtle",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "49",
+  "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
   "command": "turtle_cli",
   "finish-args": [
@@ -10,7 +10,7 @@
     "--socket=fallback-x11",
     "--socket=wayland",
     "--socket=ssh-auth",
-    "--talk-name=org.gnome.seahorse",
+    "--socket=gpg-agent",
     "--filesystem=host",
     "--device=dri"
   ],
@@ -57,8 +57,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.3.tar.xz",
-          "sha256": "37f7f29eb1ff0fec4d8b088d5483c556de1089f6d018fe6d481993caf2499d84"
+          "url": "https://download.gnome.org/sources/meld/3.24/meld-3.24.0.tar.xz",
+          "sha256": "19f036297e7c89514516bcd2e56182db2bb2ba13b4850893c1ce597445018b94"
         },
         {
           "type": "patch",
@@ -118,6 +118,20 @@
       ]
     },
     {
+      "name": "python-gnupg",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"python-gnupg\" --no-build-isolation"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/d2/ab/0ea9de971caf3cd2e268d2b05dfe9883b21cfe686a59249bd2dccb4bae33/python_gnupg-0.5.6-py2.py3-none-any.whl",
+          "sha256": "b5050a55663d8ab9fcc8d97556d229af337a87a3ebebd7054cbd8b7e2043394a"
+        }
+      ]
+    },
+    {
       "name": "turtle",
       "buildsystem": "simple",
       "build-commands": [
@@ -137,8 +151,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.14/turtle-0.14.tar.gz",
-          "sha256": "67a81c0f7f7169be0d5bcd8a146767b5ad487dd2ce994d7c71c27aa46641fbb8"
+          "url": "https://gitlab.gnome.org/philippun1/turtle/-/archive/0.14.1/turtle-0.14.1.tar.gz",
+          "sha256": "b1771b6f1deef5ba042ef4bb5dde2e8127edb8471374ee3a1270a94c472952d8"
         },
         {
           "type": "file",
